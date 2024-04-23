@@ -33,7 +33,7 @@ function Blogs({ searchQuery }) {
       </div>
     );
 
-  const blogsData = data.data;
+  const blogsData = data?.data;
 
   const searchResults = blogsData?.filter(blog =>
     `${blog.mainHeading} `
