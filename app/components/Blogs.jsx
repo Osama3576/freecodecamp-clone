@@ -55,7 +55,9 @@ function Blogs({ searchQuery }) {
   const paginate = ({ selected }) => {
     setCurrentPage(selected + 1);
   };
-
+  {
+    !currentPosts.length > 0 && <h2>No blogs</h2>;
+  }
   return (
     <div className="absolute top-[7rem] w-full h-full">
       <div className="flex flex-col items-center justify-center gap-8 py-[3rem] ">
